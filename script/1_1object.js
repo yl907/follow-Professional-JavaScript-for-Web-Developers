@@ -44,3 +44,7 @@ Person2.prototype.sayName = function() {
 
 let person2 = new Person2();
 person2.sayName();
+
+
+// finish
+console.log('----1_1object.js finished----');
