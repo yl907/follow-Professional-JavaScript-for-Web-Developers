@@ -33,3 +33,10 @@ console.log(`hasPrototypeProperty(person1, 'name'): ${hasPrototypeProperty(perso
 console.log(`hasPrototypeProperty(person2, 'name'): ${hasPrototypeProperty(person2, 'name')}`)  // true
 
 // 5.Object.keys() -- check all the keys in an object
+let keys = Object.keys(Person.prototype);
+console.log(`keys: ${keys}`);
+
+let p1 = new Person();
+p1.name = 'Rob';
+let p1keys = Object.keys(p1);
+console.log(`p1keys: ${p1keys}`);
