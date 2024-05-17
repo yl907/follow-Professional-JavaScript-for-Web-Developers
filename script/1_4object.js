@@ -61,11 +61,13 @@ SuperType3.prototype.sayName = function() {
 
 function SubType3(name, age) {
   // 借用构造函数：继承属性
+  // constructor stealing: inherit the attributes
   SuperType3.call(this, name);
   this.age = age;
 }
 
 // 原型链：继承方法
+// prototype chain: inherit the methods
 SubType3.prototype = new SuperType3();
 SubType3.prototype.constructor = SubType3;
 SubType3.prototype.sayAge = function() {
